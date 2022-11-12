@@ -36,31 +36,25 @@
       <br><br>
       </div>
     </p>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <button onclick="take_snapshot();" class="btn btn-primary">Capture Image</button>
+    </div>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <label style=" font-size: 18px; border-radius: 10px; letter-spacing: 7px;">Webcam View - </label>
-        <div id="camera"></div>
-        <br><br>
-        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
-      </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Prediction - </label>
+      <p class="object_name" id="result_object_name"></p>
+      <p class="gesture_icon" id="result_object_gesture_icon"></p>
+    </div>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <label style="font-style:inherit; font-family:monospace; font-size: 18px;">Prediction 1 - </label>
-        <p class="gesture_name" id="result_gesture_name"></p>
-        <p class="gesture" id="gesture_emoji"></p>
-
-        <label style="font-style:inherit; font-family:monospace; font-size: 18px;">Prediction 1 - </label>
-        <p class="gesture_name" id="result_gesture_name"></p>
-        <p class="gesture" id="gesture_emoji"></p>
-      </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label style=" font-size: 18px; border-radius: 10px; letter-spacing: 7px;">Snapshot - </label>
-        <div id="result"></div>
-        <br><br>
-        <button onclick="check();" class="btn btn-success">Predict Gesture</button>
-      </div>
-
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Snapshot - </label>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="check();" class="btn btn-success">Predict Hand Gesture</button>
+     </div>
     </center>
 
   </div>
